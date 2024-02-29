@@ -1,26 +1,11 @@
-import Image from "next/image";
-import { GiHamburgerMenu } from "react-icons/gi"
 import { FaArrowRight  } from "react-icons/fa"
+import Header from "./components/header/page";
 
 export default function Home() {
-
-  function handleBurgerClick() {
-      console.log("burger clicked");
-  }
   return (
     <div className="min-h-screen">
       <section>
-        <div className="flex flex-row justify-between px-10 py-4 pt-8">
-          <strong>Logo</strong>
-          <ul className="sm:flex flex-row gap-4 text-sm text-sky-600 hidden">
-            <li>Home</li>
-            <li>Pricing</li>
-            <li>Rent Hotel</li>
-            <li>Blog</li>
-            <li>Contact</li>
-          </ul>
-          <GiHamburgerMenu className="sm:hidden cursor-pointer" onClick={handleBurgerClick} />
-        </div>
+        <Header />
       </section>
 
       <section className="flex flex-col pl-8 pt-96 h-3/5 gap-4 align-bottom">
